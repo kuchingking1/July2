@@ -20,6 +20,10 @@ choco install ngrok
 
 ngrok update
 
+git add .
+git commit -m "Update ngrok to the latest version"
+git push origin master
+
       run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 
     - name: Extract
