@@ -18,7 +18,7 @@ jobs:
         run: Expand-Archive ngrok.zip
 
       - name: Auth
-        run: .\ngrok\ngrok.exe update authtoken $Env:NGROK_AUTH_TOKEN
+        run:  docker run -it -e NGROK_AUTHTOKEN=<token> ngrok/ngrok http 80
         env:
           NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
 
