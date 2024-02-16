@@ -22,6 +22,8 @@ jobs:
 
       run: Expand-Archive ngrok.zip
 
+ run: ngrok update
+
     - name: Auth
 
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
