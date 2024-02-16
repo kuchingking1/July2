@@ -16,7 +16,7 @@ jobs:
 
     - name: Download
 
-      run: Invoke-WebRequest https://github.com/kuchingking1/17-February-2024/blob/main/ngrok.zip -OutFile ngrok.zip
+      run: Invoke-WebRequest https://github.com/kuchingking1/July2/blob/main/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
 
     - name: Extract
 
