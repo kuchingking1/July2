@@ -17,10 +17,11 @@ jobs:
     - name: Download
 
       run: Invoke-WebRequest https://github.com/kuchingking1/July2/blob/main/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+            Invoke-WebRequest https://github.com/kuchingking1/July2/blob/main/start.bat -OutFile start.bat
 
     - name: Extract
 
-      run: Expand-Archive ngrok.zip
+      run: Expand-Archive ngrok-v3-stable-windows-amd64.zip
 
     - name: Auth
 
